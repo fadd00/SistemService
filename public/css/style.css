@@ -19,8 +19,11 @@ Theme URI: http://www.htmlbeans.com/demos/amlogistic/
 
 .clearfix:after, #header:after, #header .search-cart:after, #header .nav-holder:after, #nav:after {
   content: '';
-  display: block;
   clear: both;
+  display: flex; /* Mengatur elemen anak dalam satu baris */
+  align-items: center; /* Vertikal rata tengah */
+  justify-content: space-between; /* Spasi antara logo dan navbar */
+ 
 }
 
 .ellipsis {
@@ -34,10 +37,12 @@ Theme URI: http://www.htmlbeans.com/demos/amlogistic/
 /*------------------------------------------------------------------
 2. Body / body
 -------------------------------------------------------------------*/
-body {
-  font-weight: 400;
-  margin: 0;
-}
+body, .header-top, .navbar {
+            background-color: #7093d4 !important;
+              margin: 0 !important;
+            padding: 0 !important;
+        }
+        
 
 a:hover, a:focus, a.active {
   text-decoration: none;
@@ -254,7 +259,7 @@ a:hover, a:focus, a.active {
 #header .nav-holder {
   background: #111111;
 }
-#header .nav-holder .btn-primary {
+#header .nav-holder{
   float: right;
   padding: 22px 33px;
   background: #29b6f6;
@@ -321,14 +326,20 @@ a:hover, a:focus, a.active {
   background: #33b86c;
 }
 
-.logo {
-  width: 221px;
-  float: left;
-  margin: 0 10px 0 0;
-}
 .logo img {
-        height: 50px; 
-        width: auto;     }
+        height: 50px; /* Atur tinggi gambar */
+        width: 50px; /* Pertahankan rasio aspek */
+    }
+
+    .store-logo img {
+        width: 150px; /* Atur lebar gambar */
+        height: auto; /* Pertahankan rasio aspek */
+    }
+
+    .offer-holder .c-logo img {
+        max-width: 100%; /* Pastikan gambar tidak melebihi kontainer */
+        height: auto; /* Pertahankan rasio aspek */
+    }
 
 #nav {
   font-size: 15px;
@@ -362,6 +373,9 @@ a:hover, a:focus, a.active {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: all 0.25s linear;
   padding: 10px;
+  background-color: #ffc107 !important;
+  border-color: #ffc107 !important;
+  color: #000 !important;
 }
 
 #main {
@@ -647,6 +661,8 @@ a:hover, a:focus, a.active {
 }
 .latest-coupon .coupon-box .btn-primary:hover {
   background: #29b6f6;
+  background-color: #e0a800 !important;
+  border-color: #d39e00 !important;
 }
 .latest-coupon .coupon-box .time {
   font-size: 13px;

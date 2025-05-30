@@ -24,6 +24,8 @@
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -45,56 +47,53 @@
 					</div>
 				</div>
 			</div>
-			<!-- nav holder of the page -->
-			<div class="nav-holder">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12">
-						<!-- Logo di sebelah kiri -->
-                            <div class="logo" style="float: left;">
-                                <a href="{{ url('/') }}">
-                                    <img src="{{ asset('img/logo.png') }}" alt="Coupmy" class="img-responsive">
-                                </a>
-						<nav id="nav" style="float: right;">
-								<ul class="list-unstyled">
-									<li class="active">
-										<a href="#">Home</a>
-										<ul class="drop-down list-unstyled">
-											<li><a href="home.html">Homepage 1</a></li>
-											<li><a href="home2.html">Homepage 2</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Blog</a>
-										<ul class="drop-down list-unstyled">
-											<li><a href="blog.html">Blog</a></li>
-											<li><a href="blog-detail.html">Blog Detail</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="#">Page</a>
-                                        <ul class="drop-down list-unstyled">
-                                            <li><a href="coupon1.html">Coupon</a></li>
-                                            <li><a href="coupon-detail.html">Coupon Detail</a></li>
-                                            <li><a href="category.html">Category</a></li>
-                                            <li><a href="login.html">Login</a></li>
-                                            <li><a href="register.html">Register</a></li>
-                                            <li><a href="store.html">Store</a></li>
-                                        </ul>
-									</li>
-									<li>
-										<a href="#">Contact Us</a>
-										<ul class="drop-down list-unstyled">
-											<li><a href="contact.html">Contact Us</a></li>
-											<li><a href="contact2.html">Contact Us2</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- nav holder -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url('/') }}">
+                <img src="{{ asset('img/logo.png') }}" alt="Coupmy" height="50" style="width:auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar" aria-controls="mainNavbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">Homepages</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="homeDropdown">
+                            <li><a class="dropdown-item" href="home.html">Homepage 1</a></li>
+                            <li><a class="dropdown-item" href="home2.html">Homepage 2</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="blogDropdown">
+                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">Page</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="pageDropdown">
+                            <li><a class="dropdown-item" href="coupon1.html">Coupon</a></li>
+                            <li><a class="dropdown-item" href="coupon-detail.html">Coupon Detail</a></li>
+                            <li><a class="dropdown-item" href="category.html">Category</a></li>
+                            <li><a class="dropdown-item" href="{{ route('login-form') }}">Login</a></li>
+                            <li><a class="dropdown-item" href="register.html">Register</a></li>
+                            <li><a class="dropdown-item" href="store.html">Store</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 		</header>
 		<!-- header of the page end -->
 		<!-- main of the page -->
@@ -407,5 +406,6 @@
 	</div>
 	<script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
