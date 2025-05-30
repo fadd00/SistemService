@@ -13,6 +13,10 @@ use App\Http\Controllers\Auth\LoginController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/', function () {
+    $rows = DB::select('SELECT * FROM item');
+    return view('home', compact('rows'));
+});
 
 Route::get('/', function () {
     return view('home');
@@ -31,3 +35,5 @@ Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
 
 // Rute untuk logout
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+Route::get('/users', [UserController::class, 'home']);

@@ -1,4 +1,4 @@
- /*
+/*
 Theme Name: Amlogistic | Transportation & Logistics HTML Template
 Author: Markhorthemes
 Author URI: https://themeforest.net/user/Markhorthemes
@@ -11,6 +11,14 @@ Theme URI: http://www.htmlbeans.com/demos/amlogistic/
 /*------------------------------------------------------------------
 1. import files / import files
 -------------------------------------------------------------------*/
+:root {
+  --bg-color: #B3D9FF;       /* pastel blue */
+  --accent-color: #FFF9B0;   /* pastel yellow */
+  --fill-color: #C8FACC;     /* pastel green */
+  --text-color: #273746;     /* dark for contrast */
+  --link-hover: #1A5276;      /* darker pastel blue */
+}
+
 #wrapper {
   position: relative;
   overflow: hidden;
@@ -38,9 +46,10 @@ Theme URI: http://www.htmlbeans.com/demos/amlogistic/
 2. Body / body
 -------------------------------------------------------------------*/
 body, .header-top, .navbar {
-            background-color: #7093d4 !important;
+            background-color: var(--bg-color) !important;
               margin: 0 !important;
             padding: 0 !important;
+            color: var(--text-color);
         }
         
 
@@ -231,7 +240,7 @@ a:hover, a:focus, a.active {
   text-align: center;
   float: left;
   padding: 11px 5px 10px 7px;
-  background: #33b86c;
+  background: var(--fill-color) !important;
   transition: all 0.25s linear;
 }
 #header .cart {
@@ -262,7 +271,7 @@ a:hover, a:focus, a.active {
 #header .nav-holder{
   float: right;
   padding: 22px 33px;
-  background: #29b6f6;
+  background: var(--bg-color) !important;
 }
 #header.header2 {
   position: absolute;
@@ -373,9 +382,35 @@ a:hover, a:focus, a.active {
   font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: all 0.25s linear;
   padding: 10px;
-  background-color: #ffc107 !important;
-  border-color: #ffc107 !important;
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
   color: #000 !important;
+}
+
+/* Ganti semua hard-coded biru terang (#29b6f6) dengan var(--bg-color) */
+#header .nav-holder,
+.navbar,
+.header-top {
+  background: var(--bg-color) !important;
+}
+
+/* Ganti semua hard-coded hijau (#33b86c) dengan var(--fill-color) */
+#header .search-form .sub-btn,
+.banner.banner2 .search-form .sub-btn {
+  background: var(--fill-color) !important;
+}
+
+/* Hover link dan navbar teks */
+a:hover,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--link-hover) !important;
+}
+
+/* Teks dasar */
+body,
+.header-top,
+.navbar {
+  color: var(--text-color) !important;
 }
 
 #main {
@@ -489,7 +524,7 @@ a:hover, a:focus, a.active {
   text-align: center;
   float: left;
   padding: 17px 5px 15px;
-  background: #33b86c;
+  background: var(--fill-color) !important;
   text-transform: uppercase;
   transition: all 0.25s linear;
 }

@@ -99,7 +99,7 @@
 		<!-- main of the page -->
 		<main id="main">
 			<!-- banner of the page -->
-			<section class="banner bg-full overlay" style="background-image: url(http://placehold.it/1920x900);">
+			<section class="banner bg-full overlay" style="background-image: url(https://placehold.jp/1920x900.png);">
 				<div class="holder">
 					<div class="container">
 						<div class="row">
@@ -129,16 +129,16 @@
 					<div class="row">
 						<div class="col-xs-12">
 							<ul class="list-unstyled store-logo">
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
-								<li><a href="#"><img src="http://placehold.it/150x65" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
+								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
 							</ul>
 							<div class="text-center">
 								<a href="#" class="btn-primary text-center text-uppercase md-round">Visit all stores</a>
@@ -181,7 +181,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs health">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa. Furniture &amp; Dining Tables</strong>
@@ -194,7 +194,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs res">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Home &amp; Kitchen Appliances</strong>
@@ -207,7 +207,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs sport">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Upto 15% Off On Family <br class="hidden-xs">Tour Packages</strong>
@@ -220,7 +220,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs kitchen">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Extra 10% Off On Men Appareals <br class="hidden-xs">Accessories</strong>
@@ -233,7 +233,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs fashion">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Upto 25% Off On Beauty Spa <br class="hidden-xs">&amp; Massage For Women</strong>
@@ -246,7 +246,7 @@
 							<!-- col of the page -->
 							<div class="col mar-bottom-xs health">
 								<div class="header">
-									<div class="c-logo"><img src="http://placehold.it/150x50" alt="logo" class="img-responsive"></div>
+									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
 									<span class="offer">25% Off</span>
 								</div>
 								<strong class="heading6">Extra 15% Off On Electronics <br class="hidden-xs">&amp; Kitchen Appliances</strong>
@@ -266,7 +266,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-5">
 							<div class="img-holder">
-								<img src="http://placehold.it/375x375" alt="image description" class="img-responsive">
+								<img src="https://placehold.jp/375x375.png" alt="image description" class="img-responsive">
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-7">
@@ -283,7 +283,7 @@
 				</div>
 			</section>
 			<!-- subscribe sec of the page -->
-			<section class="subscribe-sec bg-full" style="background-image: url(http://placehold.it/1920x140);">
+			<section class="subscribe-sec bg-full" style="background-image: url(https://placehold.jp/1920x140.png);">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-6 text-center">
