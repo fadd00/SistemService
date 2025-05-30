@@ -326,6 +326,9 @@ a:hover, a:focus, a.active {
   float: left;
   margin: 0 10px 0 0;
 }
+.logo img {
+        height: 50px; 
+        width: auto;     }
 
 #nav {
   font-size: 15px;

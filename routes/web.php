@@ -18,6 +18,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/login-form', function () {
+    return view('login'); // Mengarahkan ke login.blade.php
+})->name('login-form');
+
 
 // Rute untuk menampilkan form login
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');

@@ -1,46 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- set the encoding of your site -->
-	<meta charset="utf-8">
-	<!-- set the viewport width and initial-scale on mobile devices -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- set the HandheldFriendly -->
-	<meta name="HandheldFriendly" content="True">
-	<!-- set the description -->
-	<meta name="description" content="Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template">
-	<!-- set the Keyword -->
-	<meta name="keywords" content="">
-	<meta name="author" content="Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template">
-	<title>Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template</title>
-	<!-- include the site stylesheet -->
-	{{-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CPoppins:300,400,500,600,900%7CLily+Script+One" rel="stylesheet">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/plugins.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/icofont.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/colors.css">
-	<!-- include the site stylesheet -->
-	<link rel="stylesheet" href="css/responsive.css">
-	<!-- include the site stylesheet -->
-    <link rel="stylesheet" href="resources/css/home.css">
-	<style class="color_css"></style> --}}
-
-	@vite([
-    'resources/css/home.css',
-    'resources/css/icofont.css',
-    'resources/css/plugins.css',
-    'resources/css/responsive.css',
-    'resources/css/style.css',
-    // 'resources/js/app.js' // Jika ada JavaScript
-])
+<!-- set the encoding of your site -->
+    <meta charset="utf-8">
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- set the HandheldFriendly -->
+    <meta name="HandheldFriendly" content="True">
+    <!-- set the description -->
+    <meta name="description" content="Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template">
+    <!-- set the Keyword -->
+    <meta name="keywords" content="">
+    <meta name="author" content="Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template">
+    <title>Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template</title>
+    <!-- include the site stylesheet -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CPoppins:300,400,500,600,900%7CLily+Script+One" rel="stylesheet">
+    <!-- include the site stylesheet -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/colors.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/icofont.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/plugins.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
+	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -55,33 +38,9 @@
 							<span class="txt">Welcome to Coupmy Save More With Our Deals</span>
 							<ul class="align-left list-unstyled">
 								<li><a href="#">Support</a></li>
-								<li><a href="login.html"><i class="fa fa-unlock-alt"></i> Login</a></li>
+								<li><a href="{{ route('login-form') }}" class="btn btn-primary">Login</a></li>
 								<li><a href="register.html"><i class="fa fa-user"></i> Register</a></li>
 							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- header holder of the page -->
-			<div class="header-holder container">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="logo">
-							<a href="home.html"><img src="images/logo.png" alt="Coupmy" class="img-responsive"></a>
-						</div>
-						<div class="search-cart">
-							<form action="#" class="search-form">
-								<fieldset>
-									<select>
-										<option value="0">Select Category</option>
-										<option value="1">Select Category</option>
-										<option value="2">Select Category</option>
-									</select>
-									<input type="search" class="form-control" placeholder="Enter Keyword . . .">
-									<button type="submit" class="sub-btn"><i class="icon-search"></i></button>
-								</fieldset>
-							</form>
-							<a href="#" class="cart"><i class="icon-cart"></i> <span class="num round">2</span></a>
 						</div>
 					</div>
 				</div>
@@ -91,9 +50,12 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<a href="#" class="nav-opener text-center hidden visible-sm visible-xs"><i class="fa fa-bars"></i></a>
-							<!-- nav of the page -->
-							<nav id="nav">
+						<!-- Logo di sebelah kiri -->
+                            <div class="logo" style="float: left;">
+                                <a href="{{ url('/') }}">
+                                    <img src="{{ asset('img/logo.png') }}" alt="Coupmy" class="img-responsive">
+                                </a>
+						<nav id="nav" style="float: right;">
 								<ul class="list-unstyled">
 									<li class="active">
 										<a href="#">Home</a>
@@ -102,7 +64,6 @@
 											<li><a href="home2.html">Homepage 2</a></li>
 										</ul>
 									</li>
-									<li><a href="about.html">About Us</a></li>
 									<li>
 										<a href="#">Blog</a>
 										<ul class="drop-down list-unstyled">
@@ -112,15 +73,14 @@
 									</li>
 									<li>
 										<a href="#">Page</a>
-										<ul class="drop-down list-unstyled">
-											<li><a href="coupon1.html">Coupon</a></li>
-											<li><a href="coupon-detail.html">Coupon Detail</a></li>
-											<li><a href="category.html">Category</a></li>
-											<li><a href="login.html">Login</a></li>
-											<li><a href="register.html">Register</a></li>
-											<li><a href="store.html">Store</a></li>
-											<li><a href="submit-coupon.html">Submit Coupon</a></li>
-										</ul>
+                                        <ul class="drop-down list-unstyled">
+                                            <li><a href="coupon1.html">Coupon</a></li>
+                                            <li><a href="coupon-detail.html">Coupon Detail</a></li>
+                                            <li><a href="category.html">Category</a></li>
+                                            <li><a href="login.html">Login</a></li>
+                                            <li><a href="register.html">Register</a></li>
+                                            <li><a href="store.html">Store</a></li>
+                                        </ul>
 									</li>
 									<li>
 										<a href="#">Contact Us</a>
@@ -131,7 +91,6 @@
 									</li>
 								</ul>
 							</nav>
-							<a href="submit-coupon.html" class="btn-primary text-center text-uppercase">Submit Coupon</a>
 						</div>
 					</div>
 				</div>
@@ -154,154 +113,6 @@
 										<button type="submit" class="btn-icon"><i class="icon-right-arrow"></i></button>
 									</fieldset>
 								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- latest coupon of the page -->
-			<section class="latest-coupon container pad-top-lg pad-bottom-md">
-				<div class="row">
-					<header class="col-xs-12 text-center header">
-						<h2 class="heading">Latest Coupon Codes &amp; Deals</h2>
-					</header>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 50% Off On Home Appliances</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 03 Sep, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 20% Off On Men Style Spa Saloon</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 21 Sep, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 20% Off On Paris Honeymoon Trip</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 22 Sep, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 20% Off On Women Accessories</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 01 Sep, 2017</time>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Extra Up To 20% Off On All Furnitures</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 05 Oct, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 10% Off On Home Appliances</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 21 Oct, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Up To 15% Off On All Electronic Items</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 21 Oct, 2017</time>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3">
-						<!-- coupon box of the page -->
-						<div class="coupon-box mar-bottom-xs">
-							<div class="img-holder">
-								<img src="http://placehold.it/260x190" alt="image description" class="img-resposnive">
-							</div>
-							<div class="txt-holder">
-								<h3 class="heading6"><a href="coupon-detail.html">Extra Up To 10% Off On Massage &amp; Spa</a></h3>
-								<ul class="list-unstyled list-show">
-									<li><a href="#"><i class="icon icon-smile"></i> Verified</a></li>
-									<li><a href="#"><i class="icon icon-user"></i> Used</a></li>
-								</ul>
-								<a href="coupon-detail.html" class="btn-primary md-round text-center text-uppercase">Get Coupon Code</a>
-								<time class="time text-center" datetime="2017-02-03 20:00">Expires On : 28 Oct, 2017</time>
 							</div>
 						</div>
 					</div>
@@ -333,103 +144,6 @@
 							<div class="text-center">
 								<a href="#" class="btn-primary text-center text-uppercase md-round">Visit all stores</a>
 							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!-- feature sec of the page -->
-			<section class="feature-sec container pad-top-lg pad-bottom-md">
-				<div class="row">
-					<header class="col-xs-12 text-center header">
-						<h4 class="heading">Coupmy Featured Category</h4>
-						<p>Explore the popular categories in coupmy</p>
-					</header>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-restaurant"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Restaurants</h2>
-									<p>32 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-health"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Health &amp; Beauty</h2>
-									<p>21 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-event"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Events &amp; Activities</h2>
-									<p>17 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-sport"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Sports &amp; Fitness</h2>
-									<p>23 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-men"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Sports &amp; Fitness</h2>
-									<p>21 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- feature box of the page -->
-						<div class="feature-box">
-							<span class="icon round text-center"><span class="border round"><i class="icon-women"></i></span></span>
-							<div class="img-holder overlay">
-								<img src="http://placehold.it/360x200" alt="image description" class="img-responsive">
-								<div class="over text-center">
-									<h2 class="heading2">Women Accessories</h2>
-									<p>19 deals available</p>
-								</div>
-							</div>
-							<a href="coupon-detail.html" class="btn-primary text-center text-uppercase">view deals & Coupon</a>
 						</div>
 					</div>
 				</div>
@@ -569,52 +283,6 @@
 					</div>
 				</div>
 			</section>
-			<!-- blog sec of the page -->
-			<section class="blog-sec container pad-top-lg pad-bottom-md">
-				<div class="row">
-					<div class="header col-xs-12 header text-center">
-						<h3 class="heading">Latest Updates From Coupmy</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-xs-12 col-sm-4">
-						<!-- blog holder of the page -->
-						<div class="blog-holder mar-bottom-xs">
-							<div class="img-holder">
-								<a href="blog-detail.html"><img src="http://placehold.it/360x240" alt="image description" class="img-resposnive"></a>
-								<time class="time text-center" datetime="2017-02-03 20:00">12 <span class="txt">Sep</span></time>
-							</div>
-							<h4 class="heading3"><a href="blog-detail.html">Sed ut perspiciatis unde omnis</a></h4>
-							<p>Lorem ipsum dolor sit amet onsect adipiscing elit sed do eiusmod tempor incididun.</p>
-							<a href="blog-detail.html" class="btn-primary text-center text-uppercase">read more</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- blog holder of the page -->
-						<div class="blog-holder mar-bottom-xs">
-							<div class="img-holder">
-								<a href="blog-detail.html"><img src="http://placehold.it/360x240" alt="image description" class="img-resposnive"></a>
-								<time class="time text-center" datetime="2017-02-03 20:00">12 <span class="txt">Sep</span></time>
-							</div>
-							<h4 class="heading3"><a href="blog-detail.html">Sed ut perspiciatis unde omnis</a></h4>
-							<p>Lorem ipsum dolor sit amet onsect adipiscing elit sed do eiusmod tempor incididun.</p>
-							<a href="blog-detail.html" class="btn-primary text-center text-uppercase">read more</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<!-- blog holder of the page -->
-						<div class="blog-holder mar-bottom-xs">
-							<div class="img-holder">
-								<a href="blog-detail.html"><img src="http://placehold.it/360x240" alt="image description" class="img-resposnive"></a>
-								<time class="time text-center" datetime="2017-02-03 20:00">12 <span class="txt">Sep</span></time>
-							</div>
-							<h4 class="heading3"><a href="blog-detail.html">Sed ut perspiciatis unde omnis</a></h4>
-							<p>Lorem ipsum dolor sit amet onsect adipiscing elit sed do eiusmod tempor incididun.</p>
-							<a href="blog-detail.html" class="btn-primary text-center text-uppercase">read more</a>
-						</div>
-					</div>
-				</div>
-			</section>
 			<!-- subscribe sec of the page -->
 			<section class="subscribe-sec bg-full" style="background-image: url(http://placehold.it/1920x140);">
 				<div class="container">
@@ -661,7 +329,6 @@
 						<div class="col2">
 							<h3 class="text-uppercase">Quick Links</h3>
 							<ul class="list-unstyled f-nav">
-								<li><a href="#">About Us</a></li>
 								<li><a href="#">Coupons</a></li>
 								<li><a href="#">Offers</a></li>
 								<li><a href="#">Deals</a></li>
@@ -722,7 +389,6 @@
 						<div class="col-xs-12 col-sm-7">
 							<ul class="list-unstyled footer-nav">
 								<li><a href="#">Home</a></li>
-								<li><a href="#">About</a></li>
 								<li><a href="#">Services</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 								<li><a href="#">Terms&amp;Conditions</a></li>
@@ -739,13 +405,7 @@
 			<div class="block"><img src="images/svg/bars.svg" width="60" alt="loader"></div>
 		</div> -->
 	</div>
-	<!-- main container of all the page elements end -->
-	<!-- include jQuery -->
-	<script src="js/jquery.js"></script>
-	<!-- include jQuery -->
-	<script src="js/plugins.js"></script>
-	<!-- include jQuery -->
-	<script src="js/jquery.main.js"></script>
-	<div id="style-changer" data-src="style-changer.html"></div>
+	<script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/bootstrap.js') }}"></script>
 </body>
 </html>
