@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,13 +17,11 @@ use App\Http\Controllers\Auth\LoginController;
 |
 */
 Route::get('/', function () {
-    $rows = DB::select('SELECT * FROM item');
+    $rows = DB::select('SELECT * FROM users');
     return view('home', compact('rows'));
 });
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/admin', [AdminController::class, 'index'])->middleware('admin')->name('admin');
 
 Route::get('/login-form', function () {
     return view('login'); // Mengarahkan ke login.blade.php
@@ -28,12 +29,14 @@ Route::get('/login-form', function () {
 
 
 // Rute untuk menampilkan form login
-Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
 // Rute untuk memproses data login
-Route::post('/login', [LoginController::class, 'login'])->name('login.submit');
+Route::post('/login', [AuthController::class, 'login'])->name('login.submit');
 
 // Rute untuk logout
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::get('/users', [UserController::class, 'home']);
+
+Route::resource('/items', ItemController::class);
