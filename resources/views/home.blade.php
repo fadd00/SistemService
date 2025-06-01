@@ -177,86 +177,85 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- offer holder of the page -->
-						<div class="offer-holder">
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs health">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa. Furniture &amp; Dining Tables</strong>
-								<span class="sub-title">See all 12 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs res">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Home &amp; Kitchen Appliances</strong>
-								<span class="sub-title">See all 15 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs sport">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Upto 15% Off On Family <br class="hidden-xs">Tour Packages</strong>
-								<span class="sub-title">See all 22 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs kitchen">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Extra 10% Off On Men Appareals <br class="hidden-xs">Accessories</strong>
-								<span class="sub-title">See all 12 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs fashion">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Upto 25% Off On Beauty Spa <br class="hidden-xs">&amp; Massage For Women</strong>
-								<span class="sub-title">See all 15 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-							<!-- col of the page -->
-							<div class="col mar-bottom-xs health">
-								<div class="header">
-									<div class="c-logo"><img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="logo" class="img-responsive"></div>
-									<span class="offer">25% Off</span>
-								</div>
-								<strong class="heading6">Extra 15% Off On Electronics <br class="hidden-xs">&amp; Kitchen Appliances</strong>
-								<span class="sub-title">See all 22 Coupay Offers</span>
-								<div class="text-center">
-									<a href="coupon-detail.html" class="btn-primary text-center text-uppercase md-round">view coupon <span class="code">18FX</span></a>
-									<time class="time" datetime="2017-02-03 20:00">Expires On : 29 Oct, 2017</time>
-								</div>
-							</div>
-						</div>
+						<div class="offer-holder-wrapper">
+    <div class="offer-holder" id="offerHolder">
+        <!-- Card 1 -->
+        <div class="product-card">
+            <span class="offer">25% Off</span>
+            <div class="product-image">
+                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
+            </div>
+            <div class="product-description">
+                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
+                <span class="sub-title">See all 12 Coupay Offers</span>
+            </div>
+            <div class="text-center">
+                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="product-card">
+            <span class="offer">25% Off</span>
+            <div class="product-image">
+                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
+            </div>
+            <div class="product-description">
+                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
+                <span class="sub-title">See all 12 Coupay Offers</span>
+            </div>
+            <div class="text-center">
+                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
+            </div>
+        </div>
+		<!-- Card 2 -->
+        <div class="product-card">
+            <span class="offer">25% Off</span>
+            <div class="product-image">
+                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
+            </div>
+            <div class="product-description">
+                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
+                <span class="sub-title">See all 12 Coupay Offers</span>
+            </div>
+            <div class="text-center">
+                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
+            </div>
+        </div>
+		<!-- Card 2 -->
+        <div class="product-card">
+            <span class="offer">25% Off</span>
+            <div class="product-image">
+                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
+            </div>
+            <div class="product-description">
+                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
+                <span class="sub-title">See all 12 Coupay Offers</span>
+            </div>
+            <div class="text-center">
+                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
+            </div>
+        </div>
+		<!-- Card 2 -->
+        <div class="product-card">
+            <span class="offer">25% Off</span>
+            <div class="product-image">
+                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
+            </div>
+            <div class="product-description">
+                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
+                <span class="sub-title">See all 12 Coupay Offers</span>
+            </div>
+            <div class="text-center">
+                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Tombol Slider -->
+    <div class="slider-buttons">
+        <button class="slider-btn" id="slideLeft">&lt;</button>
+        <button class="slider-btn" id="slideRight">&gt;</button>
+    </div>
+</div>
 					</div>
 				</div>
 			</section>
@@ -404,6 +403,17 @@
 			<div class="block"><img src="images/svg/bars.svg" width="60" alt="loader"></div>
 		</div> -->
 	</div>
+	<script>
+		document.getElementById('slideLeft').addEventListener('click', function () {
+    const container = document.getElementById('offerHolder');
+    container.scrollLeft -= 300; // Geser ke kiri sejauh 300px
+});
+
+document.getElementById('slideRight').addEventListener('click', function () {
+    const container = document.getElementById('offerHolder');
+    container.scrollLeft += 300; // Geser ke kanan sejauh 300px
+});
+	</script>
 	<script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
