@@ -178,82 +178,21 @@
 					<div class="col-xs-12">
 						<!-- offer holder of the page -->
 						<div class="offer-holder-wrapper">
-    <div class="offer-holder" id="offerHolder">
-        <!-- Card 1 -->
-        <div class="product-card">
-            <span class="offer">25% Off</span>
-            <div class="product-image">
-                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
-            </div>
-            <div class="product-description">
-                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
-                <span class="sub-title">See all 12 Coupay Offers</span>
-            </div>
-            <div class="text-center">
-                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
-            </div>
+    <div class="offer-holder-grid">
+    @foreach ($products as $product)
+    <div class="product-card">
+        <div class="product-image">
+            <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="img-responsive" style="width: 100%; height: auto;">
         </div>
-        <!-- Card 2 -->
-        <div class="product-card">
-            <span class="offer">25% Off</span>
-            <div class="product-image">
-                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
-            </div>
-            <div class="product-description">
-                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
-                <span class="sub-title">See all 12 Coupay Offers</span>
-            </div>
-            <div class="text-center">
-                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
-            </div>
-        </div>
-		<!-- Card 2 -->
-        <div class="product-card">
-            <span class="offer">25% Off</span>
-            <div class="product-image">
-                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
-            </div>
-            <div class="product-description">
-                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
-                <span class="sub-title">See all 12 Coupay Offers</span>
-            </div>
-            <div class="text-center">
-                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
-            </div>
-        </div>
-		<!-- Card 2 -->
-        <div class="product-card">
-            <span class="offer">25% Off</span>
-            <div class="product-image">
-                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
-            </div>
-            <div class="product-description">
-                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
-                <span class="sub-title">See all 12 Coupay Offers</span>
-            </div>
-            <div class="text-center">
-                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
-            </div>
-        </div>
-		<!-- Card 2 -->
-        <div class="product-card">
-            <span class="offer">25% Off</span>
-            <div class="product-image">
-                <img src="https://image-placeholder.com/images/actual-size/150x50.png" alt="Product Image" class="img-responsive">
-            </div>
-            <div class="product-description">
-                <strong class="heading6">Upto 15% + Extra 10% Off On <br class="hidden-xs">Sofa, Furniture &amp; Dining Tables</strong>
-                <span class="sub-title">See all 12 Coupay Offers</span>
-            </div>
-            <div class="text-center">
-                <a href="product-detail.html" class="btn-primary text-center text-uppercase md-round">Buy Now</a>
-            </div>
+        <span class="offer">Price: ${{ number_format($product->price, 2) }}</span>
+        <div class="product-description">
+            <strong class="heading6">{{ $product->name }}</strong>
+            <p>Quantity: {{ $product->quantity }}</p>
+            <p>{{ $product->description }}</p>
         </div>
     </div>
-    <!-- Tombol Slider -->
-    <div class="slider-buttons">
-        <button class="slider-btn" id="slideLeft">&lt;</button>
-        <button class="slider-btn" id="slideRight">&gt;</button>
+    @endforeach
+</div>
     </div>
 </div>
 					</div>
