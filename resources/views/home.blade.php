@@ -165,13 +165,6 @@
 				<div class="row">
 					<header class="col-xs-12 text-center header">
 						<h2 class="heading">Today’s Best Offers And Coupons</h2>
-						<ul class="list-unstyled filter-list">
-							<li class="active"><a href="#" data-filter=".health">Health &amp; Beauty</a></li>
-							<li><a href="#" data-filter=".kitchen">Electronics &amp; Kitchen</a></li>
-							<li><a href="#" data-filter=".res">Restaurants</a></li>
-							<li><a href="#" data-filter=".sport">Sports &amp; Fitness</a></li>
-							<li><a href="#" data-filter=".fashion">Fashion &amp; Appareals</a></li>
-						</ul>
 					</header>
 				</div>
 				<div class="row">
