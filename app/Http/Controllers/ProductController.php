@@ -47,4 +47,50 @@ class ProductController extends Controller
         // Redirect ke halaman form dengan pesan sukses
         return redirect()->route('items.create')->with('success', 'Product added successfully!');
     }
+
+    // Menampilkan halaman admin dengan daftar produk
+    public function admin()
+    {
+        $products = Product::all();
+        return view('admin', compact('products'));
+    }
+
+    // Update produk
+    public function update(Request $request, $id)
+    {
+        $product = Product::findOrFail($id);
+
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'quantity' => 'required|integer|min:1',
+            'price' => 'required|numeric|min:0',
+            'description' => 'nullable|string',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $data = [
+            'name' => $request->name,
+            'quantity' => $request->quantity,
+            'price' => $request->price,
+            'description' => $request->description,
+        ];
+
+        if ($request->hasFile('image')) {
+            $imagePath = $request->file('image')->store('uploads', 'public');
+            $data['image_url'] = '/storage/' . $imagePath;
+        }
+
+        $product->update($data);
+
+        return redirect()->route('admin')->with('success', 'Product updated successfully!');
+    }
+
+    // Hapus produk
+    public function destroy($id)
+    {
+        $product = Product::findOrFail($id);
+        $product->delete();
+
+        return redirect()->route('admin')->with('success', 'Product deleted successfully!');
+    }
 }
