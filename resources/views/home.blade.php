@@ -175,13 +175,16 @@
     @foreach ($products as $product)
     <div class="product-card">
         <div class="product-image">
-            <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="img-responsive" style="width: 100%; height: auto;">
+            <img src="{{ $product->image_url }}" alt="{{ $product->name }}" class="img-responsive">
         </div>
-        <span class="offer">Price: ${{ number_format($product->price, 2) }}</span>
+        <span class="offer">Price: Rp {{ number_format($product->price, 0, ',', '.') }}</span>
         <div class="product-description">
             <strong class="heading6">{{ $product->name }}</strong>
             <p>Quantity: {{ $product->quantity }}</p>
             <p>{{ $product->description }}</p>
+        </div>
+        <div class="text-center">
+            <a href="#" class="btn-buy" onclick="buyProduct({{ $product->id }})">Buy Now</a>
         </div>
     </div>
     @endforeach
@@ -335,5 +338,17 @@ document.getElementById('slideRight').addEventListener('click', function () {
 	<script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+function buyProduct(productId) {
+    // Implementasi logika pembelian
+    alert('Membeli produk dengan ID: ' + productId);
+    
+    // Atau redirect ke halaman checkout
+    // window.location.href = '/checkout/' + productId;
+    
+    // Atau tampilkan modal checkout
+    // $('#checkoutModal').modal('show');
+}
+</script>
 </body>
 </html>
