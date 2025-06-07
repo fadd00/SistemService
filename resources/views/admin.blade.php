@@ -39,7 +39,7 @@
                 <h3><i class="fas fa-plus"></i> Add New Product</h3>
             </div>
             <div class="card-body">
-                <form method="POST" action="{{ url('/items') }}" enctype="multipart/form-data">
+                <form method="POST" action="{{ url('/admin/products') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
@@ -115,7 +115,9 @@
                                                     data-bs-target="#editModal{{ $product->id }}">
                                                 <i class="fas fa-edit"></i> Edit
                                             </button>
-                                            <form method="POST" action="{{ url('/items/' . $product->id) }}" 
+
+                                            <!-- Form Delete -->
+                                            <form method="POST" action="{{ route('products.destroy', $product->id) }}" 
                                                   style="display: inline;" 
                                                   onsubmit="return confirm('Are you sure you want to delete this product?')">
                                                 @csrf
@@ -136,7 +138,8 @@
                                                 <h5 class="modal-title">Edit Product: {{ $product->name }}</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                             </div>
-                                            <form method="POST" action="{{ url('/items/' . $product->id) }}" enctype="multipart/form-data">
+                                            <!-- Form Edit di Modal -->
+                                            <form method="POST" action="{{ route('products.update', $product->id) }}" enctype="multipart/form-data">
                                                 @csrf
                                                 @method('PUT')
                                                 <div class="modal-body">

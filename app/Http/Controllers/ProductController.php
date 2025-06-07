@@ -44,8 +44,8 @@ class ProductController extends Controller
             'image_url' => '/storage/' . $imagePath, // Simpan path gambar
         ]);
 
-        // Redirect ke halaman form dengan pesan sukses
-        return redirect()->route('items.create')->with('success', 'Product added successfully!');
+        // Redirect kembali ke halaman admin
+        return redirect('/admin')->with('success', 'Product added successfully!');
     }
 
     // Menampilkan halaman admin dengan daftar produk
@@ -82,7 +82,7 @@ class ProductController extends Controller
 
         $product->update($data);
 
-        return redirect()->route('admin')->with('success', 'Product updated successfully!');
+        return redirect('/admin')->with('success', 'Product updated successfully!');
     }
 
     // Hapus produk
@@ -91,6 +91,6 @@ class ProductController extends Controller
         $product = Product::findOrFail($id);
         $product->delete();
 
-        return redirect()->route('admin')->with('success', 'Product deleted successfully!');
+        return redirect('/admin')->with('success', 'Product deleted successfully!');
     }
 }

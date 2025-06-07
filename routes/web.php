@@ -42,7 +42,10 @@ Route::resource('/items', ItemController::class);
 Route::get('/admin/products/create', [ProductController::class, 'create'])->name('products.create');
 Route::post('/admin/products', [ProductController::class, 'store'])->name('products.store');
 
-Route::get('/items/create', [ProductController::class, 'create'])->name('items.create'); // Menampilkan form
 Route::post('/items', [ProductController::class, 'store'])->name('items.store'); // Menyimpan data
 Route::put('/items/{id}', [ProductController::class, 'update'])->name('items.update');
 Route::delete('/items/{id}', [ProductController::class, 'destroy'])->name('items.destroy');
+
+Route::post('/admin/products', [ProductController::class, 'store'])->name('products.store');
+Route::put('/admin/products/{id}', [ProductController::class, 'update'])->name('products.update');
+Route::delete('/admin/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
