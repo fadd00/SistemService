@@ -12,7 +12,7 @@
     <!-- set the Keyword -->
     <meta name="keywords" content="">
     <meta name="author" content="Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template">
-    <title>Coupmy-Coupons, Affiliates, Offers, Deals, Discounts &amp; Marketplace HTML Template</title>
+    <title>Sahabat Service</title>
     <!-- include the site stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600%7CPoppins:300,400,500,600,900%7CLily+Script+One" rel="stylesheet">
     <!-- include the site stylesheet -->
@@ -37,7 +37,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12">
-							<span class="txt">Welcome to Coupmy Save More With Our Deals</span>
+							<span class="txt">Selamat datang di sahabat service</span>
 							<ul class="align-left list-unstyled">
 								<li><a href="#">Support</a></li>
 								<li><a href="{{ route('login-form') }}" class="btn btn-primary">Login</a></li>
@@ -61,14 +61,14 @@
             <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">Homepages</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="homeDropdown">
                             <li><a class="dropdown-item" href="home.html">Homepage 1</a></li>
                             <li><a class="dropdown-item" href="home2.html">Homepage 2</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
@@ -77,7 +77,7 @@
                             <li><a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
+                    {{-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">Page</a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="pageDropdown">
@@ -88,8 +88,8 @@
                             <li><a class="dropdown-item" href="register.html">Register</a></li>
                             <li><a class="dropdown-item" href="store.html">Store</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    </li> --}}
+                    <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
                 </ul>
             </div>
         </div>
@@ -104,11 +104,11 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12 text-left">
-								<h1 class="text-uppercase">It looks like it's <br class="hidden-xs">been furnished <br class="hidden-xs">by <span class="clr">discount</span> <br class="hidden-xs">stores.</h1>
+								<h1 class="text-uppercase">Selamat Datang  <br class="hidden-xs">di <br class="hidden-xs"> <span class="clr">Sahabat</span> <br class="hidden-xs">Service</h1>
 								<form action="#" class="search-form lg-round">
 									<fieldset>
 										<label for="search"><i class="icon icon-search"></i></label>
-										<input type="search" class="form-control" id="search" placeholder="Search coupons & deals">
+										<input type="search" class="form-control" id="search" placeholder="Cari layanan Kami">
 										<button type="submit" class="btn-icon"><i class="icon-right-arrow"></i></button>
 									</fieldset>
 								</form>
@@ -122,8 +122,8 @@
 				<div class="container">
 					<div class="row">
 						<header class="col-xs-12 text-center header">
-							<h3 class="heading">More Than <span class="clr">3000+ Stores</span> In One Place!</h3>
-							<p>Search your favourite store &amp; get many deals</p>
+							<h3 class="heading">layanan Kami</h3>
+							<p>Sahabat Service membantumu&amp;Sesuai dengan apa yang kamu keluhkan</p>
 						</header>
 					</div>
 					<div class="row">
@@ -140,9 +140,9 @@
 								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
 								<li><a href="#"><img src="https://placehold.jp/150x65.png" alt="LOGO" class="img-responsive"></a></li>
 							</ul>
-							<div class="text-center">
+							{{-- <div class="text-center">
 								<a href="#" class="btn-primary text-center text-uppercase md-round">Visit all stores</a>
-							</div>
+							</div> --}}
 						</div>
 					</div>
 				</div>
@@ -152,10 +152,10 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-8 col-lg-offset-1">
-							<h3>Want To List Your Store In Our <strong>Coupmy!</strong></h3>
+							<h3>Hubungi Kami <strong></strong></h3>
 						</div>
 						<div class="col-xs-12 col-sm-3">
-							<a href="#" class="btn-primary text-center text-uppercase md-round">Register Now</a>
+							<a href="#" class="btn-primary text-center text-uppercase md-round">Kontak</a>
 						</div>
 					</div>
 				</div>
@@ -164,7 +164,7 @@
 			<section class="offer-sec container pad-top-lg pad-bottom-md">
 				<div class="row">
 					<header class="col-xs-12 text-center header">
-						<h2 class="heading">Today’s Best Offers And Coupons</h2>
+						<h2 class="heading">Produk Kami</h2>
 					</header>
 				</div>
 				<div class="row">
@@ -196,17 +196,25 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-5">
-							<div class="img-holder">
-								<img src="https://placehold.jp/375x375.png" alt="image description" class="img-responsive">
+							<div class="map-holder">
+								<iframe 
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126463.96642131557!2d110.28424164335937!3d-7.892790900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a578767a1c72b%3A0x7b4a24f3c7f1a3a0!2sJl.%20Bantul%2C%20Daerah%20Istimewa%20Yogyakarta!5e0!3m2!1sid!2sid!4v1717741445214!5m2!1sid!2sid" 
+									width="100%" 
+									height="375" 
+									style="border:0; border-radius: 8px;" 
+									allowfullscreen="" 
+									loading="lazy" 
+									referrerpolicy="no-referrer-when-downgrade">
+								</iframe>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-7">
 							<div class="txt-holder">
-								<h3 class="heading">Download Our Coupmy App Now!</h3>
-								<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae.</p>
+								<h3 class="heading">Alamat Kami</h3>
+								<p>Jalan Bantul Kabupaten Yogyakarta</p>
 								<div class="btn-holder">
-									<a href="#" class="pull-left"><img src="images/g-btn.png" alt="image description" class="img-resposnive"></a>
-									<a href="#" class="pull-left"><img src="images/app-btn.png" alt="image description" class="img-resposnive"></a>
+									<a href="#" class="pull-left"><img src="images/g-btn.png" alt="Tombol Google Play" class="img-resposnive"></a>
+									<a href="#" class="pull-left"><img src="images/app-btn.png" alt="Tombol App Store" class="img-resposnive"></a>
 								</div>
 							</div>
 						</div>
