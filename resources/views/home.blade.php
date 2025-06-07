@@ -225,16 +225,16 @@
 			<section class="subscribe-sec bg-full" style="background-image: url(https://placehold.jp/1920x140.png);">
 				<div class="container">
 					<div class="row">
-						<div class="col-xs-12 col-sm-6 text-center">
-							<h5>Subscribe To Our Newsletter</h5>
+						<div class="col-xs-12 col-sm-6 text-center" type="button">
+							<a href=""><h5>Hubungi Kami</h5></a>
 						</div>
 						<div class="col-xs-12 col-sm-6">
-							<form action="#" class="subscribe-form">
+							{{-- <form action="#" class="subscribe-form">
 								<fieldset>
 									<input type="email" class="form-control" placeholder="Email Address">
 									<button type="submit" class="sub-btn"><i class="icon-airoplane"></i></button>
 								</fieldset>
-							</form>
+							</form> --}}
 						</div>
 					</div>
 				</div>
@@ -265,29 +265,15 @@
 							</ul>
 						</div>
 						<div class="col2">
-							<h3 class="text-uppercase">Quick Links</h3>
+							<h3 class="text-uppercase">layanan Cepat</h3>
 							<ul class="list-unstyled f-nav">
-								<li><a href="#">Coupons</a></li>
-								<li><a href="#">Offers</a></li>
-								<li><a href="#">Deals</a></li>
-								<li><a href="#">Latest News</a></li>
-								<li><a href="#">Support</a></li>
-								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Service</a></li>
+								<li><a href="#">Jual Hp</a></li>
+								<li><a href="#">Beli Hp</a></li>
 							</ul>
 						</div>
 						<div class="col3">
-							<h3 class="text-uppercase">Categories</h3>
-							<ul class="list-unstyled tags">
-								<li><a href="#">Restaurant</a></li>
-								<li><a href="#">Health</a></li>
-								<li><a href="#">Fitness</a></li>
-								<li><a href="#">Events</a></li>
-								<li><a href="#">Beauty</a></li>
-								<li><a href="#">Sports</a></li>
-								<li><a href="#">Electronics</a></li>
-								<li><a href="#">Watches</a></li>
-							</ul>
-							<h3 class="text-uppercase">Follow us</h3>
+							<h3 class="text-uppercase">Sosial Media</h3>
 							<ul class="list-unstyled socail-network">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -296,19 +282,12 @@
 							</ul>
 						</div>
 						<div class="col4">
-							<h3 class="text-uppercase">Recent Tweets</h3>
+							<h3 class="text-uppercase">Alamat</h3>
 							<ul class="list-unstyled recent-tweet">
 								<li>
 									<span class="icon"><i class="fa fa-twitter"></i></span>
 									<div class="txt-holder">
-										<p><a href="#">@Micheal Doe</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu santium dolo remque laudan tium, </p>
-										<time datetime="2018-02-03 20:00" class="time">Posted on 29 Sep</time>
-									</div>
-								</li>
-								<li>
-									<span class="icon"><i class="fa fa-twitter"></i></span>
-									<div class="txt-holder">
-										<p><a href="#">@Micheal Doe</a> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu santium dolo remque laudan tium, </p>
+										<p><a href="#">Jl. Ypgyakarta, </p>
 										<time datetime="2018-02-03 20:00" class="time">Posted on 29 Sep</time>
 									</div>
 								</li>
@@ -322,14 +301,13 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-5">
-							<p>© 2017 All rights reserved. Created by Htmlbeans</p>
+							<p>@nama kamu</p>
 						</div>
 						<div class="col-xs-12 col-sm-7">
 							<ul class="list-unstyled footer-nav">
 								<li><a href="#">Home</a></li>
 								<li><a href="#">Services</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms&amp;Conditions</a></li>
+								<li><a href="#">kontak</a></li>
 							</ul>
 						</div>
 					</div>
